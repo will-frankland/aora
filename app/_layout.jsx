@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native'
-import { Slot, SplashScreen, Stack } from 'expo-router'
-import { useFonts } from 'expo-font';
-import { useEffect } from 'react';
+import { StyleSheet, Text, View } from "react-native";
+import { Slot, SplashScreen, Stack } from "expo-router";
+import { useFonts } from "expo-font";
+import { useEffect } from "react";
 
 // Prevents the spalsh screen auto hiding before asset loading is complete
 SplashScreen.preventAutoHideAsync();
@@ -21,18 +21,15 @@ const RootLayout = () => {
 
   useEffect(() => {
     if (error) throw error;
-
-    if(fontsLoaded) SplashScreen.hideAsync();
-
-    if(!fontsLoaded && !error) return null;
-
-  }, [fontsLoaded, error])
+    if (fontsLoaded) SplashScreen.hideAsync();
+    if (!fontsLoaded && !error) return null;
+  }, [fontsLoaded, error]);
 
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
     </Stack>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
