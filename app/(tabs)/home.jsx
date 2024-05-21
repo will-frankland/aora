@@ -4,9 +4,8 @@ import {
   FlatList,
   Image,
   RefreshControl,
-  Alert,
 } from "react-native";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images } from "../../constants";
@@ -19,7 +18,7 @@ import VideoCard from "../../components/VideoCard";
 import { useGlobalContext } from "../../context/GlobalProvider";
 
 const Home = () => {
-  const { user, setUser, setIsLoggedIn } = useGlobalContext();
+  const { user } = useGlobalContext();
   const { data: posts, refetch } = useAppwrite(getAllPosts);
   const { data: latestPosts } = useAppwrite(getLatestPosts);
 
