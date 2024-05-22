@@ -24,7 +24,7 @@ The app utilizes Expo Image Picker in order to access the user device for select
 
 ## Screenshots
 
-!["Screenshot of sign-up page"](https://github.com/will-frankland/aora/blob/main/public/signup.PNG)
+!["Screenshot of sign-up page"](https://github.com/will-frankland/aora/blob/main/public/signup.PNG "Signup Page")
 !["Screenshot of homepage tab"](https://github.com/will-frankland/aora/blob/main/public/homepage.PNG)
 !["Screenshot of create tab"](https://github.com/will-frankland/aora/blob/main/public/createVideo.PNG)
 !["Screenshot of profile tab"](https://github.com/will-frankland/aora/blob/main/public/profile.PNG)
