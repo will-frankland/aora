@@ -53,21 +53,6 @@ const TabsLayout = () => {
           }}
         />
         <Tabs.Screen
-          name="bookmarks"
-          options={{
-            title: "Bookmarks",
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => (
-              <TabIcon
-                icon={icons.bookmark}
-                color={color}
-                name="Bookmarks"
-                focused={focused}
-              />
-            ),
-          }}
-        />
-        <Tabs.Screen
           name="create"
           options={{
             title: "Create",
